@@ -20,20 +20,20 @@ function App() {
   return (
     <main className='bg-cream h-screen flex flex-col justify-center items-center max-container'>
       <article className=''>
-        <section id="balance" className="text-white bg-soft-red w-80 p-5 rounded-lg flex justify-between max-container">
+        <section id="balance" className="text-white bg-soft-red w-80 p-5 rounded-lg flex justify-between max-container lg:w-96">
           <div id='left-side'>
             <p className='text-very-pale-orange font-dmSans font-normal'>My balance</p>
             <h2 className='text-white font-dmSans font-bold text-xl mt-2'>$0.00</h2>
           </div>
           <img src={logo} alt="logo" />
         </section>
-        <section id='spending-graph' className='bg-white mt-5 rounded-md w-80 p-6 pb-2'>
+        <section id='spending-graph' className='bg-white mt-5 rounded-md w-80 p-6 pb-2 lg:w-96'>
           <h1 className='font-dmSans font-bold text-dark-brown text-xl max-container'>Spending - Last 7 days</h1>
           <div id='bars' className='pt-16 flex gap-3 justify-end items-end'>
             {
               data.map((item, index) => {
                 return (
-                  <Bar key={index} height={bars[item.day]} day={item.day} />
+                  <Bar key={index} height={bars[item.day]} day={item.day} amount ={item.amount} />
                 )
               })
             }
