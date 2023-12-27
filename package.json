@@ -2,7 +2,7 @@
   "name": "expense-chart",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/bilguun1130/expense-chart",
+  "homepage": "https://github.com/bilguun1130/",
   "type": "module",
   "scripts": {
     "dev": "vite",
